@@ -15,15 +15,13 @@ describe("Teste de Login", function () {
         await driver.sleep(300)
 
         //Digitar o usuario 
-        let user = ("standard_user");
-        await driver.findElement(By.id("user-name")).sendKeys(user);
+        await driver.findElement(By.id("user-name")).sendKeys(standard_user);
 
         //Tempo de espera
         await driver.sleep(300)
 
         //Digitar a senha
-        let pass = ("secret_sauce");
-        await driver.findElement(By.id("password")).sendKeys(pass);
+        await driver.findElement(By.id("password")).sendKeys(secret_sauce);
 
         //Tempo de espera
         await driver.sleep(300)
